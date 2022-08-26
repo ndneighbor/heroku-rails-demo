@@ -31,7 +31,8 @@ Rails.application.configure do
   config.assets.compile = false
   # Allow requests from subdomains like `www.product.com` and
 # `beta1.product.com`.
-  Rails.application.config.hosts << /.*\.railway\.app/
+  config.hosts << /.*\.railway\.app/
+  config.hosts << "web-production-2210.up.railway.app"
 
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
