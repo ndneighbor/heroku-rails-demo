@@ -29,6 +29,10 @@ Rails.application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
+  # Allow requests from subdomains like `www.product.com` and
+# `beta1.product.com`.
+  Rails.application.config.hosts << /.*\.railway\.app/
+
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
