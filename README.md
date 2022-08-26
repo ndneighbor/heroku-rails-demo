@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample Rails application used to show off Railway's One Click Heroku Deploys
 
-Things you may want to cover:
+## Developing Locally
 
-* Ruby version
+For a non-Railway development flow make sure that `redis`, `psql`, `foreman` is installed on your machine.
 
-* System dependencies
+To run the application locally run
 
-* Configuration
+```
+bundle install
+```
 
-* Database creation
+then
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+foreman start -f Procfile.dev
+```
