@@ -17,3 +17,7 @@ then
 ```
 foreman start -f Procfile.dev
 ```
+
+## Developing on Railway
+
+When deploying on Railway, Rails will not be able to find pSQL or Redis. Be sure to add the requisite services.
